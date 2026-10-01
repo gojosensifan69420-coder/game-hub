@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🎮 Game Hub</div>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Play Games</h1>
+      <p>A simple game hub made with HTML, CSS, and JavaScript.</p>
+      <input id="search" type="search" placeholder="Search games..." aria-label="Search games">
+    </section>
+
+    <section id="games" class="games-section">
+      <h2>Games</h2>
+      <div id="gameGrid" class="game-grid"></div>
+      <p id="empty" class="empty" hidden>No games found.</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>Add your own games, thumbnails, descriptions, and links in <code>script.js</code>.</p>
+    </section>
+  </main>
+
+  <div id="gameModal" class="modal" hidden>
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="Close">×</button>
+      <h2 id="modalTitle"></h2>
+      <div class="game-frame">
+        <div>
+          <div class="big-game-icon" id="modalIcon">🎮</div>
+          <p id="modalText"></p>
+          <p class="hint">This is a placeholder game window. You can connect it to your own HTML game later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Game Hub • Built with HTML + CSS + JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
